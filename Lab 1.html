@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <table cellpadding="10px" cellspacing="10px" >
+
+        <form action="#">
+
+            <tr >
+                <th colspan="2"><h2>Registration Form</h2></th>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="name">Name</label>
+                </td>
+                <td>
+                    <input id="name" type="text" placeholder="Enter Your Name" required maxlength="25">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="email">Email</label>
+                </td>
+                <td>
+                    <input id="email" type="email" value="test@example.com" required autofocus>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="password">Password</label>
+                </td>
+                <td>
+                    <input id="password" type="password" required minlength="6">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="category">Category</label>
+                </td>
+                <td>
+                    <select name="category">
+                        <option value="student">Student</option>
+                        <option value="employee">Employee</option>
+                        <option value="freelancer" selected>Freelancer</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="date">Event Date</label>
+                </td>
+                <td>
+                    <input type="date" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="">Tickets</label>
+                </td>
+                <td>
+                    <input type="radio" id="ticket1" name="select_ticket"> 
+                    <label for="ticket1">1 Ticket</label> <br>
+                    
+                    <input type="radio" id="ticket2" name="select_ticket" checked> 
+                    <label for="ticket2">2 Tickets</label> <br>
+                    
+                    <input type="radio" id="ticket3" name="select_ticket"> 
+                    <label for="ticket3">3 Tickets</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="check">Online Payment</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="check" required> Pay  Online
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="notes">Notes</label>
+                </td>
+                <td>
+                    <textarea placeholder="Enter Your Notes" name="" id="" cols="30" rows="5"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <button type="submit">Submit</button>
+                </td>
+            </tr>
+    
+        </form>
+
+    </table>
+    
+</body>
+</html>
